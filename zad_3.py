@@ -1,9 +1,8 @@
-human_avg_temperture=36.6
+def filter_even_numbers(numbers):
+    filtered_numbers = []
+    for number in numbers:
+        if number%2==0:
+            filtered_numbers.append(number)
+    return filtered_numbers
 
-def fever():
-    your_temperature=float(input("What is your current temperture? "))
-    if (your_temperature>human_avg_temperture):
-        print("You might have a fever")
-    else:
-        print("You do not have a fever")
-fever()
+print(filter_even_numbers([1,2,3,4,5,6,7,8,9]))

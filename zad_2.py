@@ -1,5 +1,7 @@
-def have_you_passed(grade):
-    if grade in range(3,6):
-        print("Congrats! You have passed the exam!")
-    else:
-        print("Unlucky! You have failed the exam!")
+def make_multiplier(x):
+    def multiplier(y):
+        return x * y
+    return multiplier
+
+fun = make_multiplier(4)
+print(fun(4))
